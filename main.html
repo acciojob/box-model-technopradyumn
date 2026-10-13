@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Box Model</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      width: 400px;
+      margin: 0 auto;          /* centers the container horizontally */
+      padding: 20px;
+      border: 3px solid #333;
+      border-radius: 20px;     /* rounded border */
+      text-align: center;      /* centers the inline blocks */
+    }
+
+    .red,
+    .green,
+    .yellow {
+      display: inline-block;   /* inline, but with width and height */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;      /* makes each block a circle */
+      margin: 0 10px;          /* spacing between circles */
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="container">
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+  </div>
 </body>
-
 </html>
